@@ -20,7 +20,6 @@ services:
     name: cloud-log-frontend
     runtime: static
     rootDir: frontend
-    staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
         fromService:
