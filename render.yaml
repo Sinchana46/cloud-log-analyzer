@@ -1,9 +1,9 @@
 services:
   - type: web
     name: cloud-log-backend
-    runtime: node
+    runtime: docker
     rootDir: backend
-    plan: starter
+    plan: free
     envVars:
       - key: PORT
         value: 5000
@@ -11,6 +11,7 @@ services:
         value: mongodb+srv://Sinchana:<NETFLIX>@cluster0.wviwovk.mongodb.net/?appName=Cluster0
         sync: false
       - key: CLIENT_URL
+        value: mongodb+srv://Sinchana:<db_password>@cluster0.wviwovk.mongodb.net/?appName=Cluster0
         fromService:
           name: cloud-log-frontend
           type: web
