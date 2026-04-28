@@ -11,7 +11,6 @@ services:
         value: mongodb+srv://Sinchana:<NETFLIX>@cluster0.wviwovk.mongodb.net/?appName=Cluster0
         sync: false
       - key: CLIENT_URL
-        value: mongodb+srv://Sinchana:<db_password>@cluster0.wviwovk.mongodb.net/?appName=Cluster0
         fromService:
           name: cloud-log-frontend
           type: web
